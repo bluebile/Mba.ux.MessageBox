@@ -1,0 +1,33 @@
+{
+    "name": "Mba.ux.MessageBox",
+    "version": "0.0.1",
+    "homepage": "https://github.com/bluebile/Mba.ux.MessageBox",
+    "authors": [
+        "Bluebile <info@bluebile.com>"
+    ],
+    "description": "Suporte message box nativo",
+    "main": [
+        "MessageBox.js"
+    ],
+    "keywords": [
+        "senchatouch",
+        "extjs",
+        "ux",
+        "confirm",
+        "alert"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "demo",
+        "ux",
+        "**/*.*~",
+        "Gruntfile.js",
+        "bower.json",
+        "package.json",
+        "test",
+        "tests"
+    ]
+}
