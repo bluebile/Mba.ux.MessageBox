@@ -5,7 +5,7 @@ Ext.define('Mba.ux.MessageBox', {
 
     alert: function(title, message, fn, scope) {
         Ext.device.Notification.show({
-            title: title == null ? 'Atenção' : title,
+            title: title === null ? 'Atenção' : title,
             message: message,
             buttons: Ext.MessageBox.OK,
             callback: fn,
@@ -15,7 +15,7 @@ Ext.define('Mba.ux.MessageBox', {
 
     confirm: function(title, message, fn, scope) {
         Ext.device.Notification.show({
-            title: title == null ? 'Atenção' : title,
+            title: title === null ? 'Atenção' : title,
             message: message,
             buttons: Ext.MessageBox.YESNO,
             callback: fn,
