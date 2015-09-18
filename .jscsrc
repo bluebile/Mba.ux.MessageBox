@@ -28,6 +28,7 @@
     "requireSpaceBeforeBlockStatements": true,
     "disallowSpaceAfterPrefixUnaryOperators": true,
     "disallowSpaceBeforeBinaryOperators": [ "," ],
+    "requireSpaceBetweenArguments": true,
     "requireSpaceAfterBinaryOperators": [ "?", "+", "-", "/", "*", "=", "==", "===", "!=", "!==", ">", ">=", "<", "<=" ],
     "requireSpaceBeforeBinaryOperators": [ "?", "+", "-", "/", "*", ":", "=", "==", "===", "!=", "!==", ">", ">=", "<", "<="],
     "disallowKeywords": [ "with" ],
