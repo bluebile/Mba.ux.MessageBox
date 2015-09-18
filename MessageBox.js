@@ -4,6 +4,9 @@ Ext.define('Mba.ux.MessageBox', {
     requires: ['Ext.device.Notification'],
 
     alert: function(title, message, fn, scope) {
+        if (!navigator.notification) {
+            return this.callOverridden(arguments);    
+        }
         Ext.device.Notification.show({
             title: title === null ? 'Atenção' : title,
             message: message,
@@ -14,6 +17,9 @@ Ext.define('Mba.ux.MessageBox', {
     },
 
     confirm: function(title, message, fn, scope) {
+        if (!navigator.notification) {
+            return this.callOverridden(arguments);    
+        }
         Ext.device.Notification.show({
             title: title === null ? 'Atenção' : title,
             message: message,
