@@ -27,5 +27,34 @@ Ext.define('Mba.ux.MessageBox', {
             callback: fn,
             scope: scope
         });
+    },
+
+    prompt: function(title, message, fn, buttonLabels, scope, multiLine, value, prompt) {
+        if (!navigator.notification) {
+            return this.show({
+                title: title || null,
+                message: message || null,
+                buttons: buttonLabels || Ext.MessageBox.OKCANCEL,
+                scope: scope,
+                prompt: prompt || true,
+                multiLine: multiLine,
+                value: value,
+                fn: function() {
+                    if (fn) {
+                        fn.apply(scope, arguments);
+                    }
+                }
+            });
+        }
+        Ext.device.Notification.prompt({
+            title: title === null ? 'Atenção' : title,
+            message: message,
+            buttons: Ext.MessageBox.YESNO,
+            promptCallback: fn,
+            buttonLabels: buttonLabels,
+            scope: scope,
+            defaultText: value
+        });
     }
+
 });
