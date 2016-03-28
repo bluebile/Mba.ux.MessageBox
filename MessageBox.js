@@ -49,8 +49,8 @@ Ext.define('Mba.ux.MessageBox', {
         Ext.device.Notification.prompt({
             title: title === null ? 'Atenção' : title,
             message: message,
-            buttons: Ext.MessageBox.YESNO,
-            promptCallback: fn,
+            buttons: buttonLabels || Ext.MessageBox.YESNO,
+            callback: fn,
             buttonLabels: buttonLabels,
             scope: scope,
             defaultText: value
