@@ -1,6 +1,6 @@
 {
     "name": "Mba.ux.MessageBox",
-    "version": "0.0.9",
+    "version": "1.0.0",
     "homepage": "https://github.com/bluebile/Mba.ux.MessageBox",
     "authors": [
         "Bluebile <info@bluebile.com>"
@@ -32,6 +32,6 @@
     ],
     "requires": [ "Ext.MessageBox", "Mba.ux.MessageBox" ],
     "cordova" : {
-        "id_or_url_plugin": "https://github.com/apache/cordova-plugin-dialogs"
+        "id_or_url_plugin": "cordova-plugin-dialogs@1.2.0"
     }
 }
